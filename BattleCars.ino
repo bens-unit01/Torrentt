@@ -72,8 +72,8 @@ void loop()
           
        if( angle < 5 ) angle = 10;
        if( angle > 170) angle = 165;
-       //   rotationServo.write(angle);
-       mySerial.println(angle);
+         rotationServo.write(180 - angle);
+     //  mySerial.println(angle);
           delay(15);
      } 
     }
